@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1 Diff b/w slice And SubString
+        var string1 = "Rajesh";
+            console.log("Slice:", string1.slice(3, 3));
+            var string2 = "Rajaboina"
+            console.log("SubString:", string2.substring(5, 5));
+
+            //if we give start argument as greater then end argument slice return empty string
+            var str1 = "Rajesh"
+            console.log("Slice :", str1.slice(4, 2));
+            //if we give start argument as greater then end argument substring swap arguments return o/p
+            var str2 = "Rajaboina"
+            console.log("SubString:", str2.substring(4, 2));
+            //slice take the arguments as negative values it starts from rightside and substring cannot take negative values
+            var str3 = "Rajesh"
+            console.log("Slice:", str3.slice(-5));
+            var str4 = "Rajaboina"
+            console.log("SubString:", str4.substring(-3));
+
+            
+           //Tak2 Find lines words and characters in String
+            var string = "Rajesh Rajaboina";
+            console.log("String =", string)
+            console.log("Characters =", string.length)
+            console.log("Words =", string.split(" ").length)
+
+            //Task3  convert string to array array to string ifens b/w characters
+                var string = "Rajesh"
+                console.log("String =", string)
+                // convert string to array
+                console.log("String To Array =", string.split(''));
+
+                //ifens in b/w Characters
+                var string1 = ["I", "Am", "Rajesh", "Rajaboina"];
+                var string2 = string1.join('-');
+                console.log("Add Ifens In B/w String =", string2)
+
+                //Task 4 take a phone number as a array add +1 to each number
+                    var phoneNumber = [8, 1, 7, 9, 2, 0, 4, 9, 8, 8];
+                    console.log("Phone Number =", phoneNumber);
+                    for (var i = 0; i < phoneNumber.length; i++) {
+                        var add=(Number(phoneNumber[i])) + 1
+                        console.log(add);
+                    }
+                </script>
+    
+</body>
+</html>
